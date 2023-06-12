@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="20dp">
+
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_margin="10dp"
+     android:text="Welcome!"
+     android:textColor="@color/black"
+     android:textSize="30sp"
+     android:textStyle="bold"
+     />
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+  android:text="Please Login to continue"
+  android:textColor="@color/black"
+  android:textSize="20sp"
+  />
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/username"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      app:boxCornerRadiusBottomEnd="20dp"
+      app:boxCornerRadiusBottomStart="20dp"
+      app:boxCornerRadiusTopEnd="20dp"
+      app:boxCornerRadiusTopStart="20dp"
+      android:layout_margin="20dp"
+      >
+   <com.google.android.material.textfield.TextInputEditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+    android:hint="Username"
+    android:textSize="20sp"
+       />
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+
+ <com.google.android.material.textfield.TextInputLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="20dp"
+     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+     app:boxCornerRadiusBottomEnd="20dp"
+     app:boxCornerRadiusBottomStart="20dp"
+     app:boxCornerRadiusTopEnd="20dp"
+     app:boxCornerRadiusTopStart="20dp"
+     android:layout_margin="20dp"
+     >
+  <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/password"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Password"
+      android:textSize="20sp"/>
+
+ </com.google.android.material.textfield.TextInputLayout>
+
+ <Button
+     android:id="@+id/login_btn"
+     android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_margin="20dp"
+  android:padding="10dp"
+  android:text="Login"
+  android:textSize="20sp"
+  android:textStyle="bold"
+  />
+
+
+
+
+</LinearLayout>

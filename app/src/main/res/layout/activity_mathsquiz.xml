@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/qbg"
+    >
+
+
+
+
+
+    <TextView
+        android:id="@+id/quiz_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maths Quiz!"
+        android:textSize="35sp"
+        android:layout_gravity="center"
+        android:textColor="#031291"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/maths_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_gravity="center"
+            />
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is three fifth of 100? "
+        android:fontFamily="serif"
+        android:textSize="25sp"
+        android:textColor="#020B57"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp">
+    <RadioButton
+        android:id="@+id/optoin1_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:buttonTint="#022C3C"
+        android:layout_gravity="center"
+        />
+
+        <TextView
+            android:id="@+id/tv_option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kuch bhi"
+            android:fontFamily="serif"
+            android:textSize="25sp"/>
+
+        <ImageView
+            android:id="@+id/tick1"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/greentick2"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp">
+        <RadioButton
+            android:id="@+id/optoin2_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:buttonTint="#022C3C"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kuch bhi"
+            android:fontFamily="serif"
+            android:textSize="25sp"/>
+        <ImageView
+            android:id="@+id/tick2"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/greentick2"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp">
+        <RadioButton
+            android:id="@+id/optoin3_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:buttonTint="#022C3C"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kuch bhi"
+            android:fontFamily="serif"
+            android:textSize="25sp"/>
+        <ImageView
+            android:id="@+id/tick3"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/greentick2"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp">
+        <RadioButton
+            android:id="@+id/optoin4_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:buttonTint="#022C3C"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_option4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kuch bhi"
+            android:fontFamily="serif"
+            android:textSize="25sp"/>
+        <ImageView
+            android:id="@+id/tick4"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/greentick2"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Submit_btn"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="SUBMIT"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:background="@drawable/submit_btn_border"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        />
+
+
+
+
+
+
+
+
+
+</LinearLayout>
